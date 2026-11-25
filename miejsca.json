@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Sala 208",
+    "kategoria": "laboratorium",
+    "rodzaj": "Laboratorium komputerowe",
+    "budynek": "Budynek G³ówny (A)",
+    "pietro": "II piêtro",
+    "godziny": "07:30 – 20:30",
+    "dostepnosc": "Pe³na (winda przy wejœciu B, szerokie drzwi 90 cm, brak progów)",
+    "opis": "WejdŸ drzwiami obrotowymi do holu g³ównego Budynku A, miñ portierniê i skorzystaj z windy lub klatki schodowej na II piêtro. Po wyjœciu z windy skrêæ w prawo w przeszklony korytarz wschodni. Sala 208 znajduje siê naprzeciwko pracowni fizycznej (trzecie drzwi po lewej stronie)."
+  },
+  {
+    "id": 2,
+    "nazwa": "Sala 209",
+    "kategoria": "laboratorium",
+    "rodzaj": "Pracownia grafiki komputerowej",
+    "budynek": "Budynek G³ówny (A)",
+    "pietro": "II piêtro",
+    "godziny": "08:00 – 19:30",
+    "dostepnosc": "Pe³na (winda przy wejœciu B, szerokie drzwi)",
+    "opis": "WejdŸ wejœciem g³ównym do Budynku A, wjedŸ wind¹ na II piêtro. Skrêæ w prawo w korytarz wschodni – sala znajduje siê tu¿ obok Sali 208 (czwarte drzwi po lewej)."
+  },
+  {
+    "id": 3,
+    "nazwa": "Sala 105",
+    "kategoria": "wykladowa",
+    "rodzaj": "Audytorium im. Prof. Nowaka",
+    "budynek": "Budynek G³ówny (A)",
+    "pietro": "I piêtro",
+    "godziny": "07:30 – 21:00",
+    "dostepnosc": "Dostêp z poziomu windy, dedykowane miejsca na wózki w pierwszym rzêdzie",
+    "opis": "Z holu g³ównego wejdŸ schodami na I piêtro. Audytorium znajduje siê bezpoœrednio naprzeciwko wejœcia na klatkê schodow¹ (du¿e dwuskrzyd³owe drzwi drewniane)."
+  },
+  {
+    "id": 4,
+    "nazwa": "Dziekanat WNS",
+    "kategoria": "administracja",
+    "rodzaj": "Dziekanat ds. Studenckich (pok. 14)",
+    "budynek": "Budynek G³ówny (A)",
+    "pietro": "Parter",
+    "godziny": "10:00 – 14:00 (pn–pt)",
+    "dostepnosc": "Parter, podjazd dla wózków przy wejœciu A",
+    "opis": "Od wejœcia g³ównego do Budynku A skieruj siê w lewy korytarz za portierni¹. Dziekanat to pokój numer 14 (druga tabliczka informacyjna po prawej stronie)."
+  },
+  {
+    "id": 5,
+    "nazwa": "Winda Osobowa Hol A",
+    "kategoria": "infrastruktura",
+    "rodzaj": "Winda dostosowana dla osób z niepe³nosprawnoœciami",
+    "budynek": "Budynek G³ówny (A)",
+    "pietro": "Parter – III piêtro",
+    "godziny": "06:30 – 21:30",
+    "dostepnosc": "Sygnalizacja dŸwiêkowa, przyciski w alfabecie Braille'a, niski panel steruj¹cy",
+    "opis": "Zlokalizowana w centralnym holu Budynku A, 15 metrów na wprost od drzwi obrotowych, po prawej stronie szatni."
+  }
+]
