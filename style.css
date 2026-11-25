@@ -1,0 +1,236 @@
+:root {
+  --primary: #18345e;
+  --primary-hover: #102442;
+  --accent: #c32d2d;
+  --bg: #f4f6fa;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #d8e0ed;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Pasek górny */
+.app-header {
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.15rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 40px;
+}
+
+.nav-btn.active {
+  background: white;
+  color: var(--primary);
+}
+
+.nav-btn.btn-danger {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Główna zawartość */
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Przełączanie ekranów */
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ekran powitalny */
+.hero-card {
+  background: white;
+  padding: 32px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero-card h1 {
+  color: var(--primary);
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.hero-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.search-box {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+/* Kafelki skrótów */
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.shortcuts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  min-height: 50px;
+}
+
+.card:hover {
+  border-color: var(--primary);
+}
+
+.card-icon {
+  font-size: 1.8rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: var(--muted);
+}
+
+/* Placeholder */
+.placeholder-box {
+  background: white;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsywność na smartfony */
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+}

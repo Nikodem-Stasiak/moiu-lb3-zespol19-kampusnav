@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KampusNav – Przewodnik po kampusie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pasek górny z nawigacją -->
+  <header class="app-header">
+    <div class="logo">
+      <span class="logo-icon">🏛️</span>
+      <strong>KampusNav</strong>
+      <span class="badge">Zespół 19</span>
+    </div>
+    <nav class="nav-links">
+      <button class="nav-btn active" id="btn-home">Start</button>
+      <button class="nav-btn" id="btn-catalog">Katalog sal</button>
+      <button class="nav-btn btn-danger" id="btn-report">⚠️ Zgłoś usterkę</button>
+    </nav>
+  </header>
+
+  <!-- Główny kontener ekranów (Model Oś i Szprychy) -->
+  <main class="container">
+
+    <!-- EKRAN 1: START (HUB) -->
+    <section id="screen-home" class="screen active">
+      <div class="hero-card">
+        <h1>Gdzie dzisiaj masz zajęcia?</h1>
+        <p>Wpisz numer sali, kawiarnię lub dziekanat, aby sprawdzić trasę dojścia i windę.</p>
+        
+        <div class="search-box">
+          <input type="text" id="main-search" placeholder="np. Sala 208, Dziekanat, Winda..." />
+          <button id="main-search-btn" class="btn-primary">Szukaj</button>
+        </div>
+      </div>
+
+      <h2>Często odwiedzane miejsca:</h2>
+      <div class="shortcuts-grid">
+        <div class="card" onclick="alert('Przejście do Sali 208 w katalogu')">
+          <div class="card-icon">💻</div>
+          <div>
+            <h3>Sala 208</h3>
+            <p>Laboratorium komputerowe · II piętro</p>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+
+        <div class="card" onclick="alert('Przejście do Dziekanatu')">
+          <div class="card-icon">📂</div>
+          <div>
+            <h3>Dziekanat WNS</h3>
+            <p>Pokój 14 · Parter Budynku Głównego</p>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+
+        <div class="card" onclick="alert('Przejście do Sali 105')">
+          <div class="card-icon">🎓</div>
+          <div>
+            <h3>Sala 105</h3>
+            <p>Audytorium im. Prof. Nowaka · I piętro</p>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EKRAN 2: KATALOG SAL (SZPRYCHA 1 - SZKIELET) -->
+    <section id="screen-catalog" class="screen">
+      <div class="placeholder-box">
+        <h2>Katalog sal i wyszukiwarka</h2>
+        <p>Tutaj znajdzie się widok dwupanelowy z listą sal i opisem dojścia (do dokończenia na L6).</p>
+        <button class="btn-secondary" onclick="goToScreen('home')">‹ Wróć na ekran startowy</button>
+      </div>
+    </section>
+
+    <!-- EKRAN 3: ZGŁOSZENIE USTERKI (SZPRYCHA 2 - SZKIELET) -->
+    <section id="screen-report" class="screen">
+      <div class="placeholder-box">
+        <h2>Formularz zgłoszenia awarii windy / błędu w opisie</h2>
+        <p>Tutaj znajdzie się formularz z walidacją pól (do dokończenia na L6).</p>
+        <button class="btn-secondary" onclick="goToScreen('home')">‹ Wróć na ekran startowy</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
